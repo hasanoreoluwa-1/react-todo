@@ -1,11 +1,12 @@
 .todo-list{
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
     background-color: #0394ce;
+    margin: 80px 0;
 }
 form, .todos-container{
     width: 50%;
@@ -24,7 +25,6 @@ form button{
     width: 20%;
 }
 .todos-container{
-    
     margin: 12px;
 }
 .todo-item-container{
@@ -52,4 +52,14 @@ form button{
     text-decoration: line-through;
     color: #ffff;
     
+}
+
+@media (max-width: 994px){
+    form input{
+        width: 100%;
+        margin: 8px 0;
+    }
+    form button{
+        width: 100%;
+    }
 }
