@@ -1,0 +1,15 @@
+.hero-section{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.hero-left{
+    width: 50%;
+    padding: 20px;
+}
+.hero-left > h1{
+    font-size: 70px;
+}
+.hero-right {
+    width: 50%;
+}
