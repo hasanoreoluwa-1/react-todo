@@ -15,3 +15,48 @@
     list-style-type: none;
     margin: 0 10px;
 }
+.mobile{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+.mobile-list{
+    display: none;
+}
+
+@media (max-width: 994px){
+    .mobile{
+        display: block;
+    }
+    .mobile-list{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        min-height: 100vh;
+        /* padding: 40px; */
+        background-color: #fff;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        max-width: 350px;
+        animation: mobile .8s ease-in-out;
+        transition: all ease-in-out 1s;
+    }
+    .mobile-active{
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+}
+
+@keyframes mobile {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 350px;
+    }
+    
+}
